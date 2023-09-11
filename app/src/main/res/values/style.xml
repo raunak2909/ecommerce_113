@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBottomNavigationView">
+        <!-- Other style attributes -->
+        <item name="android:background">@drawable/bottom</item>
+    </style>
+</resources>
