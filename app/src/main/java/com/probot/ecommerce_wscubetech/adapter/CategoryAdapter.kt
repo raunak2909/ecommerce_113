@@ -8,8 +8,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.probot.ecommerce_wscubetech.Activities.SubCatActivity
 import com.probot.ecommerce_wscubetech.R
 import com.probot.ecommerce_wscubetech.model.CategoryModel
+import com.squareup.picasso.Picasso
 
 class CategoryAdapter(val ctx:Context, val categoryList:ArrayList<CategoryModel>):RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
@@ -29,9 +31,12 @@ class CategoryAdapter(val ctx:Context, val categoryList:ArrayList<CategoryModel>
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val dataList = categoryList[position]
-        holder.image.setImageResource(dataList.img)
-        holder.name.setText(dataList.name)
+        Picasso.get().load(dataList.catImg).into(holder.image)
+        holder.name.text = dataList.catName
 
+       holder.itemView.setOnClickListener {
+           ctx.startActivity(Intent(ctx, SubCatActivity::class.java).putExtra("catId", dataList.catId))
+       }
     }
 }
 

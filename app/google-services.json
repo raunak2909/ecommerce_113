@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "80491878710",
+    "project_id": "andromart-1b644",
+    "storage_bucket": "andromart-1b644.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80491878710:android:38953a44c89b74b11dbb97",
+        "android_client_info": {
+          "package_name": "com.probot.ecommerce_wscubetech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGS2xuMYvNTiWjiBPXw6iGyhNMunAdj2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

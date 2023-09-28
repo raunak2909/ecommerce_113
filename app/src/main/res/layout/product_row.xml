@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/productCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="11dp"
@@ -68,24 +69,25 @@
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardColor1"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:visibility="visible"
                     android:layout_marginRight="6dp"
-                    android:backgroundTint="#2196F3"
                     app:cardCornerRadius="200dp" />
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardColor2"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginRight="6dp"
-                    android:backgroundTint="#4CAF50"
                     app:cardCornerRadius="100dp" />
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardColor3"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginRight="6dp"
-                    android:backgroundTint="#E91E63"
                     app:cardCornerRadius="100dp" />
 
             </LinearLayout>

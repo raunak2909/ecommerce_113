@@ -37,8 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         // Setting Bottom Navigation
-        binding.bottomNavigationView.setOnItemSelectedListener(object: NavigationBarView.OnItemSelectedListener {
-        override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home_menu -> loadFrag(HomeFragment(), false)
                 R.id.like -> loadFrag(LikeFragment(), false)
@@ -46,9 +45,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.profile -> loadFrag(ProfileFragment(), false)
                 R.id.category -> loadFrag(CategoryFragment(), false)
             }
-            return true
+            true
         }
-    })
 
     }
 

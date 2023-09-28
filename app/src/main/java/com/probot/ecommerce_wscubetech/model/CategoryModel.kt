@@ -1,6 +1,7 @@
 package com.probot.ecommerce_wscubetech.model
 
 data class CategoryModel (
-    val img:Int = 0,
-    val name:String = ""
+    val catId: String = "",
+    val catImg: String = "",
+    val catName: String = ""
 )
